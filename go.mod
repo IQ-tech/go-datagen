@@ -1,4 +1,4 @@
-module github.com/IQ-tech/datagen
+module github.com/IQ-tech/go-datagen
 
 go 1.17
 
