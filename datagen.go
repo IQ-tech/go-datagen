@@ -23,7 +23,9 @@ func UUID() string {
 }
 
 func Email() (email string) {
-	return fmt.Sprintf("%s@email.com", StringWithAlphabetic(rand.Intn(16)+1))
+	domains := []string{"email.com", "hotmail.com", "gmail.com", "protonmail.com"}
+	domain := domains[rand.Intn(len(domains))]
+	return fmt.Sprintf("%s@%s", StringWithAlphabetic(rand.Intn(16)+5), domain)
 }
 
 func Name() (name string) {
